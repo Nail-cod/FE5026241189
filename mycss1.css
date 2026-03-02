@@ -1,0 +1,47 @@
+body {
+        background-color:  #f6fbff;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin: 20px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    #published-date {
+        font-weight: bold;
+        font-size: 10px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    #author {
+        font-weight: bold;
+        font-size: 10px;
+        color: #555;
+        margin-bottom: 10px;
+    } 
+
+    .judul-gambar {
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+        color: #555;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .judul-berita {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #395cc6;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .text-center {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
