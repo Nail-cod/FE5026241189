@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas PWEB - JS Scrollspy Basic</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        
+        /* Navigasi yg di atas Fixed */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        .active {
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        section {
+            height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        #home { background: #f4f4f4; }
+        #project { background: #ddd; }
+        #contact { background: #f4f4f4; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home" id="nav-home">Home</a>
+        <a href="#project" id="nav-project">Project</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+
+    <section id="home">Bagian Home</section>
+    <section id="project">Bagian Project</section>
+    <section id="contact">Bagian Contact</section>
+
+    <script>
+        // JS SCROLLSPY LOGIC
+        window.onscroll = function() {
+            // 1. Ambil posisi scroll saat ini
+            let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+            // 2. Ambil semua elemen
+            const home = document.getElementById('home');
+            const project = document.getElementById('project');
+            const contact = document.getElementById('contact');
+
+            const navHome = document.getElementById('nav-home');
+            const navProject = document.getElementById('nav-project');
+            const navContact = document.getElementById('nav-contact');
+        }
